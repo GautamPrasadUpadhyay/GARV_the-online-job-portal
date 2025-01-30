@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARV_the online job portal</title>
+    <link rel="stylesheet" href="styles.css">
+   
+
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            
+            <a href="index.html" onclick="window.location.reload(); return false;"></a>
+            <div class="logo"><a href="javascript:window.location.reload()"><h2>GARV</h2></a></div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="jobs.html">JOBS</a>
+                <a href="#">COMPANY</a>
+                <a href="#">SERVICES</a>
+                
+            </div>
+        </div>
+        <div class="nav-right">
+          
+            <button class="button">Login</button>
+            <button class="button">Register</button>
+
+        </div>
+    </nav>
+    
+
+
+    <main>
+        <div class="geometric-left">
+            <div class="diamond small"></div>
+            <div class="diamond dark large"></div>
+            <div class="diamond medium offset-left"></div>
+        </div>
+        <div class="geometric-right">
+            <div class="diamond medium offset-right"></div>
+            <div class="diamond dark large"></div>
+            <div class="diamond medium offset-right"></div>
+        </div>
+        <center>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                    background-color: #000000;
+                    color: rgb(0, 0, 0);
+                }
+                .container {
+                    margin-top: 50px;
+                }
+                h1 {
+                    font-size: 36px;
+                    color: white;
+                }
+                p {
+                    color: white;
+                    font-size: 18px;
+                }
+                .search-bar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: white;
+                    padding: 10px;
+                    border-radius: 25px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                    width: 60%;
+                    margin: 20px auto;
+                }
+                .search-bar input, .search-bar select {
+                    border: none;
+                    outline: none;
+                    padding: 10px;
+                    font-size: 16px;
+                    flex: 1;
+                }
+                .search-bar button {
+                    background: #1e50ff;
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Find your dream job now</h1><br>
+                <p>5 lakh+ jobs for you to explore</p>
+                <br><br>
+                <div class="search-bar">
+                    <input type="text" placeholder="Enter skills / designations / companies">
+                    <select>
+                        <option>Select experience</option>
+                        <option>Fresher</option>
+                        <option>1-3 years</option>
+                        <option>3-5 years</option>
+                        <option>5+ years</option>
+                    </select>
+                    <input type="text" placeholder="Enter location">
+                    <button onclick="searchJobs()">Search</button>
+                </div>
+            </div>
+            <script>
+                function searchJobs() {
+                    alert('Search functionality to be implemented!');
+                }
+            </script>
+
+
+<div class="cards-container">
+    <div class="card">
+        <h2 class="card-title"><img src="images/google.png" alt="" height="100" width="170"></h2>
+        <p class="card-description">Roles: Graphic Designer <br> experience: 5 years <br> Salary: 50 LPA</p>
+        <a href="https://www.google.com/about/careers/applications/jobs/results/"><button>Apply Now</button></a>
+    </div>
+
+    <div class="card">
+        <h2 class="card-title"><img src="images/microsoft.jpg" alt="" height="100" width="100"></h2>
+        <p class="card-description">Roles: Software Engineer <br> experience: 2 years <br> Salary: 70 LPA</p>
+       <a href="https://careers.microsoft.com/v2/global/en/locations/noida.html"><button>Apply Now</button></a>
+    </div>
+
+    <div class="card">
+        <h2 class="card-title"><img src="images/jp morgan.png" alt="" height="100" width="170"></h2>
+        <p class="card-description">Company: Amazon <br> Roles: Cybersecurity  <br> Salary: 60 LPA</p>
+        <a href="https://www.jpmorganchase.com/careers"><button>Apply Now</button></a>
+    </div>
+
+
+<br>
+<br> <br>
+<br><br>
+
+    
+</body>
+</html>
