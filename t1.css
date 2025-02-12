@@ -1,0 +1,137 @@
+*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    body{
+    background-image: url('images/bg.png');
+    background-size: cover;
+    }
+    
+    .background{
+    width: 430px; 
+    height: 520px; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    
+    }
+
+    .background .shape{ 
+    height: 200px;
+    width: 200px;
+    position: absolute; 
+    border-radius: 50%;
+    }
+
+  form{
+    height: 520px;
+    width: 400px;
+    background-color: rgb(218, 213, 213) ;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    backdrop-filter: blur(10px) ;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    padding: 50px 35px;
+    box-shadow: 0 0 40px rgba(218, 216, 216, 0.6);
+
+  }
+
+  form *{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+  }
+
+  form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  form label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: darkgrey;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  ::placeholder{
+    color: gainsboro;
+
+  }
+
+  button{
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .social-btn {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  .go {
+    background: #fffdfd;
+    color: white;
+  }
+
+  .fb {
+    background: #ffffff;
+    color: white;
+  }
+
+  .social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+   

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Job Portal</title>
+    <link rel="stylesheet" href="login.css">
+    <script type="module" src="login.js" defer></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Login to Your Account</h2>
+            <form id="loginForm" action="#" method="POST">
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="loginBtn" class="btn-primary">Login</button>
+                </div>
+            </form>
+            
+            <div class="divider">
+                <span>or</span>
+            </div>
+            
+            <div class="social-login">
+                <a href="#" class="google-btn">
+                    <i class="fab fa-google"></i>
+                    Continue with Google
+                </a>
+                <a href="#" class="facebook-btn">
+                    <i class="fab fa-facebook-f"></i>
+                    Continue with Facebook
+                </a>
+            </div>
+            
+            <p class="register-link">
+                Don't have an account? <a href="register.html">Register here</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
