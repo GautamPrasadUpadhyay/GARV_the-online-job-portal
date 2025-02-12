@@ -1,54 +1,49 @@
-// JavaScript for Modal and Admin Mode
-const loginBtn = document.getElementById('loginBtn');
-const loginModal = document.getElementById('loginModal');
-const closeLogin = document.getElementById('closeLogin');
-const loginSubmit = document.getElementById('loginSubmit');
-const adminDashboard = document.getElementById('adminDashboard');
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Open Login Modal
-loginBtn.addEventListener('click', () => {
-    loginModal.style.display = 'flex';
-});
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js";
 
-// Close Login Modal
-closeLogin.addEventListener('click', () => {
-    loginModal.style.display = 'none';
-});
 
-// Handle Login Submission
-loginSubmit.addEventListener('click', () => {
-    const loginType = document.getElementById('loginType').value;
-    const email = document.getElementById('loginEmail').value;
-    const password = document.getElementById('loginPassword').value;
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyB2XnYiPyTHZkTdEwJP2VMaaAW7ylc8RbE",
+  authDomain: "login2-bf632.firebaseapp.com",
+  projectId: "login2-bf632",
+  storageBucket: "login2-bf632.firebasestorage.app",
+  messagingSenderId: "859424676481",
+  appId: "1:859424676481:web:28a05ff025157958018b80"
+};
 
-    if (loginType === 'admin') {
-        // Simulate admin login
-        if (email === "admin@example.com" && password === "admin123") {
-            alert('Admin login successful!');
-            loginModal.style.display = 'none';
-            adminDashboard.style.display = 'block';
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+//input
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+
+//button
+const loginBtn = document.getElementById("loginBtn");
+
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('loginForm');
+    
+    loginForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent form from submitting normally
+        
+        const email = document.querySelector('input[name="email"]').value;
+        const password = document.querySelector('input[name="password"]').value;
+        
+        // Basic validation
+        if (email && password) {
+            alert(`Login attempted with email: ${email}`);
+            // Here you would typically make an API call to your backend
         } else {
-            alert('Invalid admin credentials!');
+            alert('Please fill in all fields');
         }
-    } else {
-        // Simulate user login
-        alert('User login successful!');
-        loginModal.style.display = 'none';
-    }
-});
-
-// Close Modal when clicking outside
-window.addEventListener('click', (event) => {
-    if (event.target === loginModal) {
-        loginModal.style.display = 'none';
-    }
-});
-
-// Card Click Handlers
-const cards = document.querySelectorAll('.card');
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        console.log('Card clicked:', card.querySelector('.card-title').textContent);
     });
-
 });
+        
+
+

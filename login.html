@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Job Portal</title>
+    <title>Login - Job Portal</title>
     <link rel="stylesheet" href="login.css">
+    <script type="module" src="login.js" defer></script>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <div class="form-container">
-            <h2>Create an Account</h2>
-            <form action="#" method="POST">
+            <h2>Login to Your Account</h2>
+            <form id="loginForm" action="#" method="POST">
                 <div class="form-group">
-                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="password" id="password" placeholder="Password" required>
                 </div>
                 <div class="form-group">
-                    <input type="password" name="password" placeholder="Password" required>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn-primary">Register</button>
+                    <button type="submit" id="loginBtn" class="btn-primary">Login</button>
                 </div>
             </form>
             
@@ -42,8 +40,8 @@
                 </a>
             </div>
             
-            <p class="login-link">
-                Already have an account? <a href="login.html">Login here</a>
+            <p class="register-link">
+                Don't have an account? <a href="register.html">Register here</a>
             </p>
         </div>
     </div>
