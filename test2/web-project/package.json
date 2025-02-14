@@ -1,0 +1,15 @@
+{
+  "name": "web-project",
+  "version": "1.0.0",
+  "description": "A web application with login and registration functionality using Firebase.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "build": "echo 'Build script not defined'"
+  },
+  "dependencies": {
+    "firebase": "^9.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
