@@ -1,0 +1,15 @@
+{
+  "name": "firebase-web-app",
+  "version": "1.0.0",
+  "description": "A web application for user authentication using Firebase.",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "dependencies": {
+    "firebase": "^9.22.1"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
